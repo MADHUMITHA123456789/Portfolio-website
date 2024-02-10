@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codsoft InternShip Portfolio Website</title>
+    <link rel="stylesheet" href="folio.css">
+    <script src="https://kit.fontawesome.com/820a25f821.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          
+          <h1>Greetings Everyone<span>I am B.Madhumitha</span> </h1>
+          <p>Currently pursuing B.E Computer Science at R.M.K Engineering College</p>
+
+        
+      </div>
+    </div>
+</div>
+<!--- ------about-->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="mine.jpg" alt="logo">
+           </div>
+      <div class="about-col-2">
+        <h1 class="subtitle">View more </h1>
+        <p> 
+          Hi all I am Madhumitha.B ,currently pursuing B.E Computer Science at R.M.K Engineering College,Kavaraipettai.
+          I completed my schooling at Sethu Bhaskara Matriculation Higher Secondary School.With the thirst of learning and exploring more 
+          in the field of Engineering I am currently learning more domains to have the basic knowledge on all those.
+          Very happy to share these details as part of my project which is about  designing a portfolio website offered by codsoft.
+          Eager to learn more...
+
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>*Problem Solving using C++</span></li>
+          <li><span>*Java programming</span></li>
+          <li><span>*Web Developement FrameWorks</span></li>
+          <li><span>*Software Development Practices</span></li>
+          <li><span>*Data Structures</span></li>
+          <li><span>*Database Management System</span></li>
+        </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2022</span><br>Sethu Bhaskara Matriculation Higher Secondary School</li>
+            <li><span>2026</span><br>BE Computer Science at R.M.K Engineering College</li>
+          </ul>
+      </div>
+      
+      </div>
+    </div>
+</div>
+<!--------portfolio-->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work<br>
+    Online blood bank Management System<br><h2>An application where users can register and seek help in case of emergency<br>
+We have enhanced our project by providing more seciroty to user data by using cypher algorithm</h2></h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="blood.webp">
+        <div class="layer">
+          <h3>Online Blood Bank Management System</h3>
+          <p >The system helps people to register in tha application with their details and can search in the app 
+            for neede blood when there is an emergency..The enhancement we have made here is that the details of those
+            who have registered in the appliaction would be more secure as we are using cipher algorithm to encrypt user details
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+       
+      
+      
+    <a href="#" class="btn">See more</a>
+    </div>
+</div>
+</div>
+</div>
+<!--------contact-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-solid fa-paper-plane"></i>
+        madh22083.cs@rmkec.ac.in</p>
+      <p><i class="fa-solid fa-phone"></i>8248107729</p>
+      <div class="social-icons">
+        
+        <a href="https://www.linkedin.com/in/kiruthiga-r-47628b262/"><i class="fa-brands fa-linkedin"></i></a>
+        
+          
+      </div>
+      <a href="images/my-cv (2).pdf" download class="btn btn2">Download CV</a>
+    </div>
+
+    <div class="contact-right">
+      <form>
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+      </form>
+    </div>
+  </div>
+ </div>
+ <div class="copyright">
+    <p>copyright @madhumithabaskaran</p>
+ </div>
+</div>
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+
+  </body>
+</html>
+                                    
+
+
+                        
